@@ -1,0 +1,104 @@
+---
+title: "BAE587 - Homework5"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    number_sections: true  
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.height=5, fig.width=9, fig.align="center", echo = FALSE)
+```
+
+# Exercise 1 (10 points)
+
+In figure \@ref(fig:exercise1) below, the hydrograph for the year 2012-2013 for the Chickasaw River at Franklin, OH is plotted. 
+
+```{r "exercise1", echo=FALSE, eval=TRUE}
+
+data<-read.csv(file="Lin_1h_chickasaw_all_2012-2013_SI_ref.csv",header = TRUE) #Reads file into table format
+
+
+```
+
+# Exercise 2 (20 points)
+
+Calculating the lowest, highest, mean, median, as well as the 10^th^ and 90^th^ percentile of the flow rates yields:
+
+- the lowest flow was ...
+Please use embedded code. Use to report two significant numbers for square root of two, you would use the code: 
+
+- square root of 2 is `r signif(sqrt(2),digits=2)` such that all the numbers you report are automatically calculated.
+
+# Exercise 3 (20 points)
+
+Calculating and comparing the arithmetic average and medium concentrations for nitrate, TP, SRP, and TSS over the entire year of record. As of note, the reference values for agricultural watersheds are, respectively, ...
+
+You need a code chunk where you store in variables the nitrate, TP, SRP, and TSS vectors.
+
+```{r , echo=FALSE, eval=TRUE}
+
+```
+
+## Calculating and discussing the concentrations for nitrate 
+
+- The mean concentration for nitrate was ...
+
+This may suggest several things:
+
+- the ...
+- the ...
+- ... What ever you want to add here.
+
+## Calculating and discussing the concentrations for total phosphorus 
+
+- mean concentration for total phosphorus: .... mg P/L.
+- median concentration for total phosphorus: .... mg P/L.
+
+
+
+## Calculating and discussing the concentrations for SRP or phosphate
+
+- Fill in here.
+
+# Exercise 4 (20 points)
+
+This exercise consists in ...
+
+The chemographs are plotted herein. 
+
+</br></br>
+
+```{r eval =TRUE, echo = FALSE,fig.height=10}
+  data<-read.csv(file="Lin_1h_chickasaw_all_2012-2013_SI_ref.csv",header = TRUE) #Reads file into table format
+  
+  WSarea<-42.5 #Area of watershed in km2
+ 
+   par(mfrow = c(2,2))
+   par(mar=c(4.5,5,0.5,0.5))
+
+  for (i in 1:4){
+    plot(i,i)
+  }
+```
+
+</br>
+
+# Exercise 5 (15 points)
+
+This exercise consists in ...
+
+```{r eval =TRUE, echo = FALSE,fig.height=10}
+
+```
+
+# Exercise 6 (15 points)
+
+This exercise consists in ...
+
+```{r eval =TRUE, echo = FALSE,fig.height=10}
+
+```
